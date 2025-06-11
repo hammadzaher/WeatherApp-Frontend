@@ -37,13 +37,11 @@ const App = () => {
         <div className="weather-details">
           <h2>Weather Details</h2>
           <ul>
-            <li><strong>Country:</strong> {weather?.Country || 'N/A'}</li>
-            <li><strong>City:</strong> {weather?.City || 'N/A'}</li>
-            <li><strong>Province:</strong> {weather?.Provience || 'N/A'}</li>
-            <li><strong>Temperature:</strong> {weather?.Temperatur || 'N/A'}</li>
-            <li><strong>Visibility:</strong> {weather?.Visibility || 'N/A'}</li>
-            <li><strong>Humidity:</strong> {weather?.Humidity || 'N/A'}</li>
-            <li><strong>Feels Like:</strong> {weather?.FeelsLike || 'N/A'}</li>
+           <p>City: {weather.city}</p>
+           <p>Feelslike: {weather.feelslike}</p>
+           <p>Humidity: {weather.humidity}</p>
+           <p>Temperature: {weather.temperature}</p>
+           <p>Wind: {weather.wind}</p>
           </ul>
         </div>
       )}

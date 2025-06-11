@@ -1,88 +1,83 @@
+/* App.css */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  background: linear-gradient(to right, #6dd5fa, #2980b9);
+  min-height: 100vh;
   margin: 0;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .weather-form {
-  max-width: 500px;
-  margin: 60px auto;
-  background: #ffffff;
-  padding: 30px;
+  background-color: #ffffff;
+  padding: 30px 40px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
 }
 
 .form-group {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 8px;
   font-weight: 600;
+  margin-bottom: 8px;
   color: #333;
 }
 
 .form-group input {
   width: 100%;
-  padding: 12px 15px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  transition: border-color 0.3s;
+  padding: 12px;
   font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
 }
 
 .form-group input:focus {
-  border-color: #007BFF;
-  outline: none;
+  border-color: #2980b9;
 }
 
 .submit-btn {
   width: 100%;
-  padding: 14px;
-  background-color: #007BFF;
-  color: #fff;
+  padding: 12px;
+  background-color: #2980b9;
+  color: white;
+  font-weight: bold;
   font-size: 16px;
-  font-weight: 600;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
-  background-color: #0056b3;
+  background-color: #1c5d8a;
 }
 
 .weather-details {
   margin-top: 30px;
-  padding: 25px;
-  background-color: #f8f9fa;
+  padding: 20px;
+  background-color: #f0f6ff;
   border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .weather-details h2 {
   text-align: center;
+  color: #2c3e50;
   margin-bottom: 20px;
-  color: #333;
-  font-size: 22px;
 }
 
-.weather-details ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.weather-details li {
-  padding: 8px 0;
-  font-size: 16px;
-  color: #555;
-}
-
-.weather-details li strong {
-  color: #000;
+.weather-details p {
+  margin: 8px 0;
+  font-size: 23px;
+  font-weight: bolder;
+  color: #444;
 }
